@@ -1,8 +1,3 @@
-# Integrated code to control all Subsystems 1, 2, 3 and 4 whilst triggering all respective traffic light sequences.
-# Created By : Malcolm Cheah, Hui Yi and Pravir
-# Created Date : 21/05/2025 12:00PM
-# Version = 15.2
-
 from pymata4 import pymata4
 import time
 
@@ -758,4 +753,5 @@ except KeyboardInterrupt:
     board.play_tone_off(pa1Buzzer)
     print("Exiting program...")
     time.sleep(1)
+
     board.shutdown()
